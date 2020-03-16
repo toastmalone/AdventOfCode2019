@@ -6,9 +6,15 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <Folder Include="Inputs\" />
-    <Folder Include="Helpers\" />
-    <Folder Include="Solutions\" />
+    <Compile Remove="Helpers\**" />
+    <Compile Remove="Inputs\**" />
+    <Compile Remove="Solutions\**" />
+    <EmbeddedResource Remove="Helpers\**" />
+    <EmbeddedResource Remove="Inputs\**" />
+    <EmbeddedResource Remove="Solutions\**" />
+    <None Remove="Helpers\**" />
+    <None Remove="Inputs\**" />
+    <None Remove="Solutions\**" />
   </ItemGroup>
 
 </Project>
